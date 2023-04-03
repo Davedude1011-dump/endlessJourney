@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    transition: 1s;
+}
+
+.backgrounds {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 100vh;
+    translate: 0 -100%;
+}
+
+.slide {
+    position: relative;
+    font-size: calc(100vw / 165);
+}
+
+.plane {
+    position: fixed;
+    font-size: calc(100vw / 150);
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    animation: planeMovement 5s forwards infinite linear;
+}
+@keyframes planeMovement {
+    0% {
+        translate: -50% -50%;
+    }
+    30% {
+        translate: -55% -50%;
+    }
+    60% {
+        translate: -45% -50%;
+    }
+    100% {
+        translate: -50% -50%;
+    }
+}
+
+.distance {
+    position: fixed;
+    font-size: 1.5vw;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
