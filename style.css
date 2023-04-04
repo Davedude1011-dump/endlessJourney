@@ -55,3 +55,33 @@ body {
     font-family: sans-serif;
     margin-left: 20px;
 }
+
+.title {
+    position: absolute;
+    font-size: 12vw;
+    width: 100vw;
+    height: fit-content;
+    font-family: sans-serif;
+    top: 40%;
+    translate: 0 -50%;
+    text-align: center;
+    opacity: 0.05;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.sub-title {
+    position: absolute;
+    font-size: 1.5vw;
+    width: 100vw;
+    height: fit-content;
+    font-family: sans-serif;
+    top: calc(40% + 6vw);
+    translate: 0 -50%;
+    text-align: center;
+    opacity: 0.1;
+    font-weight: bold;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

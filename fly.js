@@ -4,6 +4,7 @@ var slideTwo = "                                                                
 var miles = parseInt(localStorage.getItem("distance")) || -1
 var milesToDay = 0
 var dayTime = true
+var pageJustStarted = true
 
 const plane = document.querySelector('.plane');
 
@@ -43,7 +44,6 @@ document.addEventListener('wheel', function(event) {
 
 
 function addSlides() {
-    console.log("hi")
     var slide1 = document.createElement("pre")
     var slide2 = document.createElement("pre")
 
@@ -79,5 +79,7 @@ function addSlides() {
 
     localStorage.setItem("distance", parseInt(miles))
 }
-
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 addSlides()
